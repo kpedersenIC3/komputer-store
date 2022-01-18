@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputer Store</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <main id="main">
+        <script src="customer_construct.js" defer></script>
+        <script src="bank.js" defer></script>
+        <script src="laptops.js" defer></script>
+        <script src="work.js" defer></script>
+
+
+        <div id="mainheader">
+            <h1 id="headertitle">Komputer Store</h1>
+        </div>
+
+        <div id="sections">
+            <div class="section" id="bank">
+                <h2>The Bank</h2>
+                <span id="name"></span>
+                <p>Balance: <span id="balance"></span></p>
+                <p id="showloan">Loan: -<span id="loan"></span></p>
+                <button class="buttons" id="getaloanbutton">Get A Loan!</button>
+            </div>
+
+            <div class="section" id="work">
+                <h2>The Workplace</h2>
+                <p>Salary: <span id="salary"></span></p>
+                <button class="buttons" id="bankmoneybutton">Put it in the bank</button>
+                <button class="buttons" id="workbutton">Work to get paid</button>
+                <button class="buttons" id="payoffloanbutton">Pay off loan</button>
+            </div>
+
+            <div class="section" id="laptop">
+                <h2>The Laptops</h2> 
+                <select class="select-item" name="komputers" id="komputers"></select>   
+                <h3>Features:</h3>
+                <ul id = "specs"></ul> 
+            </div>
+        </div>
+
+        
+        <div  id="info">
+            <div class="infosection">
+                <img id="komputer-img">
+            </div>
+            <div class="infosection">
+                <h2 id="info-header">About</h2>
+                <h1 id="komputer-name"></h1>
+                <span id="description"></span>
+            </div>
+            <div class="infosection">
+                <h3>Price:</h3>
+                <h2 id="price"></h2>
+                <button class="buttons" id="buykomputer">Buy Now</button>
+            </div>
+        </div>
+
+        
+    </main>
+</body>
+</html>
